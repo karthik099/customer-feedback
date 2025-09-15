@@ -32,19 +32,19 @@ const CustomerFeedback = () => {
                     {emotion === 'happy' && <IoMdCheckmark color='green' size={100} />}
                 </button>
                 <button
-                    title={'average'}
+                    title={'Average'}
                     onClick={() => handleClick('average')}         >
                     {(emotion !== 'average') && <PiSmileyMeh color='#3D48F2' size={100} />}
                     {emotion === 'average' && <IoMdCheckmark color='green' size={100} />}
                 </button>
                 <button
-                    title={'poor'}
+                    title={'Poor'}
                     onClick={() => handleClick('sad')}         >
                     {(emotion !== 'sad') && <RiEmotionSadLine color='#F36B39' size={100} />}
                     {emotion === 'sad' && <IoMdCheckmark color='green' size={100} />}
                 </button>
                 <button
-                    title={'angry'}
+                    title={'Angry'}
                     onClick={() => handleClick('angry')}    >
                     {(emotion !== 'angry') && <PiSmileyAngryLight color='#D60D0D' size={100} />}
                     {emotion === 'angry' && <IoMdCheckmark color='green' size={100} />}
