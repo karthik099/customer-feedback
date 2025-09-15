@@ -10,16 +10,18 @@ const CustomerFeedback = () => {
     const [emotion, setEmotion] = useState("");
     const [message, setMessage] = useState("");
     const handleClick = (exp: string) => {
-        setEmotion(exp);
-        if (exp === 'happy') {
-            setMessage("We're thrilled to hear you enjoyed your experience with us")
-        } else if (exp === 'average') {
-            setMessage("Thank you for your feedback. We're glad you enjoyed X, but we'll use your suggestion about Y to improve.")
-        } else if (exp === 'sad') {
-            setMessage("We are so sorry to hear about your negative experience with us. Please tell us what happened.")
-        } else if (exp === 'angry') {
-            setMessage("I'm so sorry to hear about your experience. I understand your frustration and I want to help make this right.")
-        }
+        setTimeout(() => {
+            setEmotion(exp);
+            if (exp === 'happy') {
+                setMessage("We're thrilled to hear you enjoyed your experience with us")
+            } else if (exp === 'average') {
+                setMessage("Thank you for your feedback. We're glad you enjoyed X, but we'll use your suggestion about Y to improve.")
+            } else if (exp === 'sad') {
+                setMessage("We are so sorry to hear about your negative experience with us. Please tell us what happened.")
+            } else if (exp === 'angry') {
+                setMessage("I'm so sorry to hear about your experience. I understand your frustration and I want to help make this right.")
+            }
+        })
     }
     return (
         <>
